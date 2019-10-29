@@ -27,7 +27,15 @@
 }
 ```
 
-1. 1.
+1.
+
+### 2. Launch Image - Splash Screen
+
+- 웹앱이 시작될 때 거치는 시작 화면을 설정 가능
+- **모바일 앱의 시작과 동일한 느낌을 가져감**
+- 화면의 조합: 아이콘 + 배경색 + 아이콘 이름
+- 배경색 설정은 background_color 속성 이용
+  > "background_color": "#2196F3"
 
 ### 3. Start URL
 
@@ -49,3 +57,16 @@
 - `<a>` 를 이용한 네비게이션 이동 시 새 브라우저 열기로 인해 context를 잃게 됨
 - 따라서, location.href 또는 SPA를 이용한 네비케이팅으로 전체 UX를 가져갈 필요가 있음
   > <meta name="apple-mobile-web-app-capable" content="yes">
+- ![](./images/doc/pws_displayType.jpg)
+
+### 5. Theme Color
+
+### 6. Display Orientation
+
+- 화면방향 설정
+  > portrait : 세로방향  
+  > landscape : 가로방향
+
+```json
+"orientation": "portrait"
+```
