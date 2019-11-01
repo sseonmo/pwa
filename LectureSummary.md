@@ -70,3 +70,37 @@
 ```json
 "orientation": "portrait"
 ```
+
+### Web App Install Banner
+
+- PWA가 모바일적인 특징을 가지는 큰 부분의 하나
+- 동작조건
+  - `start_url`, `short_name`, `name` 설정
+  - 아이콘은 192px 및 512px 크기의 아이콘을 포함해야합니다.
+  - Service Worker의 fetch 이벤트 구현
+  - https
+
+# Service Worker
+
+- 브라우저와 서버 사이의 미들웨어 역활을 하는 스크립트 파일
+- 평소에 알고있는 자바 스크립트와 Service worker의 자바스크립트는 다르다
+
+### 특징
+
+### Service Worker 등록
+
+### Service Worker 설치
+
+### Servie Worker Network 요청 응답
+
+- 서비스워커 설치 후 캐쉬된 자원에 대한 네트워크 요청이 있을대 캐쉬로 돌려준다.
+
+### Service Worker 활성화 및 업데이트
+
+- 새로운 서비스워커가 설치되면 활성화 단계로 넘어온다.
+- 이전에 사용하던 서비스워커와 이전 캐쉬는 모두 삭제하는 작업 진행
+  > 기존에 실행 중인 서비스워커와 사이즈를 비교하여 1바이트라도 차이나면 새걸로 간주
+
+### Service Worker 라이플 싸이클
+
+- 서비스쿼커는 웹 페이지와 별개의 생명주기
