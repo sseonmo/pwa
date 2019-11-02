@@ -57,7 +57,7 @@ self.addEventListener('activate', function(event) {
       .then(function(cacheList) {
         return Promise.all(
           cacheList.map(function(cacheName) {
-            console.log('[cacheName] : ', cacheName);
+            console.log('Service Worker Activate [cacheName] : ', cacheName);
             if (newCacheList.indexOf(cacheName) === -1) {
               return caches.delete(cacheName);
             }

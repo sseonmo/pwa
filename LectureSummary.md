@@ -104,3 +104,24 @@
 ### Service Worker 라이플 싸이클
 
 - 서비스쿼커는 웹 페이지와 별개의 생명주기
+
+# 보조라이브러리
+
+1. [sw-toolbox](https://github.com/GoogleChromeLabs/sw-toolbox)
+1. [sw-precaching](https://github.com/GoogleChromeLabs/sw-precache) - 가장 많이 사용
+1. [Workbox](https://developers.google.com/web/tools/workbox/)
+
+### sw-toolbox
+
+### sw-precache
+
+> npm install --global sw-precache  
+> npm -i -g sw-precache
+
+- sw-precache --config sw-config.js : sw-config.js 파일을 참조해 service-worker.js 파일을 생성한다.
+
+```js
+module.exports = {
+  staticFileGlobs: ['index.html', 'manifest.json', 'css/*.css', 'images/**.*'],
+};
+```

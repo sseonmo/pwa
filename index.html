@@ -32,11 +32,12 @@
         <img src="images/gauntlet.jpg" alt="Thanos Gauntlet" />
       </div>
     </main>
-    <script>
-      // 브라우저의 서비스 워커 지원여부확인
+    <script src="./dist/bundles.js"></script>
+    <!-- <script>
+      // 브라우저의 서비스 워커 지원여부확인 후 서비스 워커 등록
       if ('serviceWorker' in navigator) {
         navigator.serviceWorker
-          .register('sw.js')
+          .register('service-worker.js')
           .then(function(success) {
             console.log('[Service Worker 등록완료]', success);
           })
@@ -44,6 +45,6 @@
             console.log('[Service Worker 등록실패]', error);
           });
       }
-    </script>
+    </script> -->
   </body>
 </html>
